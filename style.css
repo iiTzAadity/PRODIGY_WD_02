@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Glassmorphism Container */
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+
+/* Digital Timer Font */
+
+#display {
+    font-family: 'Orbitron', sans-serif;
+    /* Techy Font */
+    font-size: 3rem;
+    color: #00bcd4;
+    /* Neon Cyan */
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+}
+
+
+/* Buttons Styling */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+
+/* Button specific colors */
+
+#startStopBtn {
+    background: #00bcd4;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+#lapBtn {
+    background: #444;
+}
+
+#resetBtn {
+    background: #ff4757;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+/* Laps Section */
+
+.laps-container {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+}
+
+.laps-container h3 {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+#laps {
+    list-style: none;
+    width: 100%;
+}
+
+#laps li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 5px;
+}

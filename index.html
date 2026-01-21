@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Task 02 | Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="stopwatch">
+            <h1 id="display">00:00:00</h1>
+            <div class="buttons">
+                <button id="startStopBtn" onclick="startStop()">
+                    <i class="fas fa-play" id="playIcon"></i>
+                </button>
+                <button id="lapBtn" onclick="recordLap()">
+                    <i class="fas fa-flag"></i>
+                </button>
+                <button id="resetBtn" onclick="reset()">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="laps-container">
+            <h3>Laps</h3>
+            <ul id="laps"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
